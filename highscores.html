@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>highscores</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="highscores" class="flex-center flex-column">
+                <h1 id="finalscore">0</h1>
+                <form class="end-form-container">
+                    <h2 id="end-text">enter your name below</h2>
+                    <input type="text" name="name" id="username" placeholder="enter your name">
+                    <button class="btn" id="savescorebtn" type="submit"
+                    onclick="savehighscore(event)" disabled>save</button>
+                </form>
+                <a href="/highscores.html" class="btn">play again</a>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,5 +1,5 @@
 body{
-    color: aliceblue;
+   
 }
 .choice-container{
     display: flex;
@@ -8,9 +8,27 @@ body{
     border-radius: 4px;
     min-width: 80rem;
 }
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 blue;
+    transform: 100ms;
+}
+.choice-prefix{
+    padding: 2rem 2.5rem;
+}
+.choice-text{
+    padding:2rem;
+    width: 100%;
+}
+@media screen and (max-width:768px) {
+    .choice-container{
+        min-width: 40rem;
+    }
+}
 .correct{
     background:linear-gradient(32deg, rgb(11,223,36) 0%, rgb(41,232,111)100%)
 }
 .incorrect{
     background:linear-gradient(32deg, rgba(230, 29, 1)0%, rgb(224,11,11,1)100%)
 }
+
