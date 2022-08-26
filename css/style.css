@@ -52,7 +52,7 @@ h1{
     transform: scale(1.03);
 }
 #highscore-btn{
-    background: rgb(202, 47, 78);
+    background: rgb(85, 105, 118);
 }
 #highscore-btn:hover{
     box-shadow: 0 0.4rem 1.4rem rgb(151, 237, 237);
