@@ -1,27 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
-<head>
-  <title>Coding Quiz</title>
-  <link rel="stylesheet" href="css/style.css">
-  
-</head>
-
-<header>
-  <timer:10:00 id="time">timer:10:00</timer:10:00>
-</header>
-
+    <title>Code Quiz</title>
+  </head>
+</html>
 <body>
-  <div class="container">
-    <div class="flex-column flex-center" id="home">
-      <h1>ARE YOU READY</h1>
-      <a href="./questions.html" class="btn">play</a>
-      <a href="./highscores.html" id="highscore-btn"
-     class="btn">high scores</a>
-    </div>
-  </div>
-  <script type="text/javascript" src="js/javascript.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-</body>
 
+    <a href="highscores.html">View Highscores</a>
+    
+    <div id="wrapper">
+      
+      <div id="currentTime"></div>
+     
+      <div id="questionsDiv">
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+          Try to answer the following code-related questions within the time
+          limit. Keep in mind that incorrect answers will penalize your
+          score/time by five seconds!
+        </p>
+        <ul id="choicesUl"></ul>
+        
+        <button id="startTime">Start Quiz</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

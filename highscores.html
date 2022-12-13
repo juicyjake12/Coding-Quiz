@@ -1,23 +1,26 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>highscores</title>
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
-        <div class="container">
-            <div id="highscores" class="flex-center flex-column">
-                <h1 id="finalscore">0</h1>
-                <form class="end-form-container">
-                    <h2 id="end-text">enter your name below</h2>
-                    <input type="text" name="name" id="username" placeholder="enter your name">
-                    <button class="btn" id="savescorebtn" type="submit"
-                    onclick="savehighscore(event)" disabled>save</button>
-                </form>
-                <a href="./questions.html" class="btn">play again</a>
-                
-            </div>
-        </div>
-        <script src="./js/highscores.js"></script>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Quiz HighScores</title>
+  </head>
+</html>
+
+ <body>
+   
+    <div id="wrapper">
+      
+      <div id="currentTime"></div>
+     
+      <div id="questionsDiv">
+        <h1>Highscores</h1>
+        <ul id="highScore"></ul>
+        <button id="goBack">Go Back</button>
+        <button id="clear" value="reset">Clear Highscore</button>
+      </div>
+    </div>
+    <script src="highscores.js"></script>
+  </body>
 </html>
